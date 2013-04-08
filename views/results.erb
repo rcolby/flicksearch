@@ -1,5 +1,10 @@
 <h2>
-  Search results for <%= @query %>
+  <% if @results.empty? %>
+  No search results found
+  <% else %>
+  Search results
+  <% end %>
+   for <q><%= @query %></q>
 </h2>
 <ol>
   <% @results.each do |result| %>

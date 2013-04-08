@@ -20,14 +20,20 @@
     <%= @result["Genre"] %>
   </dd>
   <dt>
+    Runtime
+  </dt>
+  <dd>
+    <%= @result["Released"] %>
+  </dd>
+  <dt>
     Released
   </dt>
   <dd>
     <%= @result["Released"] %>
   </dd>
-    <dt>
-      <%= "Director" if @directors.size == 1 %>
-      <%= "Directors" if @directors.size > 1 %>
+  <dt>
+    <%= "Director" if @directors.size == 1 %>
+    <%= "Directors" if @directors.size > 1 %>
   </dt>
   <dd>
     <% @directors.each do |director| %>
