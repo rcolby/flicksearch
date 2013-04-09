@@ -6,6 +6,7 @@
   <% end %>
    for <q><%= @query %></q>
 </h2>
+<% unless @results.empty? %>
 <ol>
   <% @results.each do |result| %>
     <li>
@@ -15,5 +16,5 @@
       (<%= result["Year"] %>)
     </li>
   <% end %>
-
+<% end %>
 </ol>
