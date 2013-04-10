@@ -2,10 +2,10 @@
 	<%= @result["Title"] %> 
   (<%= @result["Year"] %>)
 </h2>
-  <img src="<%= @result["Poster"] %>" alt="Movie Poster for <%= @result["Title"] %>" />
-<p>
+  <img src="<%= @result["Poster"] %>" alt="Movie Poster for <%= @result["Title"] %>" class="poster" alt="Movie Poster"/>
+<blockquote>
   <%= @result["Plot"] %>
-</p>
+</blockquote>
 <dl>
   <dt>
     Rating

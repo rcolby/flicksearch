@@ -1,0 +1,48 @@
+body {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+h1 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 60px;
+  text-shadow: #F4FA58 0.1em 0.1em 0.2em
+}
+
+footer {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 12px;
+}
+
+#container {
+  margin: 60px;
+  position: relative;
+  width: 800px;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 10px;
+  margin-left: 60px;
+  margin-bottom: 30px;
+}
+
+.search {
+  margin-top: 40px;
+}
+
+.home_image {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  font-family: 'Carrois Gothic', sans-serif;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.poster {
+  float: right;
+  margin-left: 20px;
+}

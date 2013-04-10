@@ -13,17 +13,17 @@ configure :development do
 end
 
 configure do
-  @app_name = "Flicks"
+  @app_name = "Flicksearch"
 end
 
 before do
-  @app_name = "Flicks"
+  @app_name = "Flicksearch"
   @page_title = @app_name.dup
 end
 
 get '/' do
   @page_title += ": Home"
-  erb :home
+  erb :home_page
 end
 
 get '/search' do
@@ -49,9 +49,9 @@ end
 
 get '/movies' do
   @id = params[:id]
-  file = open("http://www.omdbapi.com/?i=#{URI.escape(@id)}&tomatoes=true")
+  file = open("http://www.omdbapi.com/?i=#{URI.escape(@id)}")
   @result = JSON.load(file.read)
-  @page_title += ": "
+  @page_title += ": #{@result["Title"]}"
   @actors = @result["Actors"].split(", ")
   @directors = @result["Director"].split(", ")
   erb :detail
